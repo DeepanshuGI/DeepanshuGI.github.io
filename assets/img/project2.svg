@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="700">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#22c55e" stop-opacity="0.55" />
+      <stop offset="100%" stop-color="#22c55e" stop-opacity="0.15" />
+    </linearGradient>
+  </defs>
+  <rect width="100%" height="100%" fill="#0f172a"/>
+  <circle cx="240.0" cy="210.0" r="126.0" fill="url(#g)"/>
+  <circle cx="960.0" cy="140.0" r="98.00000000000001" fill="url(#g)"/>
+  <rect x="84.00000000000001" y="455.0" width="1032.0" height="126.0" fill="#ffffff10" rx="18"/>
+  <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" 
+        font-family="Inter, Arial, sans-serif" font-size="58" fill="#e5e7eb">Executive Dashboard</text>
+</svg>

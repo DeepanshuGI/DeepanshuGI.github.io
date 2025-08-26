@@ -1,0 +1,226 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <title>Projects · Data Analyst Portfolio</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#22c55e" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@500;700&display=swap" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+  <link href="assets/css/style.css" rel="stylesheet" />
+  <link href="assets/css/animations.css" rel="stylesheet" />
+
+</head>
+<body id="top">
+  <nav class="navbar navbar-expand-lg fixed-top border-bottom">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="index.html"><i class="fa-solid fa-chart-simple me-2"></i>DA · Portfolio</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav" aria-controls="nav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="nav">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link" href="index.html#projects">Featured</a></li>
+          <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+        <div class="d-flex align-items-center gap-2 ms-lg-3">
+          <button id="themeToggle" class="btn btn-outline-light btn-sm" aria-label="Toggle theme"><i class="bi bi-moon-stars"></i></button>
+          <a class="btn btn-brand btn-sm" href="#" download><i class="fa-solid fa-file-arrow-down me-2"></i>Resume</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+<section class="pt-5" style="padding-top:120px;">
+  <div class="container">
+    <div class="d-flex justify-content-between align-items-end mb-3">
+      <div>
+        <h1 class="section-title">Projects & Case Studies</h1>
+        <p class="section-subtitle">Filter by skill and open details.</p>
+      </div>
+      <div class="btn-group" role="group" aria-label="Filter projects">
+        <button class="btn btn-outline-light btn-sm active" data-filter="all">All</button>
+        <button class="btn btn-outline-light btn-sm" data-filter="sql">SQL</button>
+        <button class="btn btn-outline-light btn-sm" data-filter="bi">BI</button>
+        <button class="btn btn-outline-light btn-sm" data-filter="python">Python</button>
+        <button class="btn btn-outline-light btn-sm" data-filter="ab">A/B</button>
+      </div>
+    </div>
+    <div class="row g-4">
+      <div id="cohort" class="col-md-6 col-lg-4 project-item" data-category="sql bi" data-aos="fade-up">
+        <div class="card h-100 card-tilt">
+          <img class="card-img-top" src="assets/img/project1.svg" alt="Cohort analysis" />
+          <div class="card-body">
+            <h5 class="card-title">Cohort Retention Analysis</h5>
+            <p class="card-text text-secondary">Built SQL models and a Power BI dashboard to reveal retention drivers by acquisition channel.</p>
+            <div class="mb-2"><span class="tag">SQL</span><span class="tag">Power BI</span><span class="tag">dbt</span></div>
+            <button class="btn btn-outline-light btn-sm" data-bs-toggle="modal" data-bs-target="#proj1">Details</button>
+          </div>
+        </div>
+      </div>
+      <div id="exec" class="col-md-6 col-lg-4 project-item" data-category="bi" data-aos="fade-up" data-aos-delay="100">
+        <div class="card h-100 card-tilt">
+          <img class="card-img-top" src="assets/img/project2.svg" alt="Sales dashboard" />
+          <div class="card-body">
+            <h5 class="card-title">Executive Sales Dashboard</h5>
+            <p class="card-text text-secondary">KPI tree, drilldowns, and alerts for weekly revenue review.</p>
+            <div class="mb-2"><span class="tag">Tableau</span><span class="tag">Power BI</span><span class="tag">Stakeholder Interviews</span></div>
+            <button class="btn btn-outline-light btn-sm" data-bs-toggle="modal" data-bs-target="#proj2">Details</button>
+          </div>
+        </div>
+      </div>
+      <div id="ab" class="col-md-6 col-lg-4 project-item" data-category="python ab" data-aos="fade-up" data-aos-delay="200">
+        <div class="card h-100 card-tilt">
+          <img class="card-img-top" src="assets/img/project3.svg" alt="AB testing" />
+          <div class="card-body">
+            <h5 class="card-title">Experimentation & A/B Testing</h5>
+            <p class="card-text text-secondary">Power analysis, CUPED variance reduction, and reporting.</p>
+            <div class="mb-2"><span class="tag">Python</span><span class="tag">Pandas</span><span class="tag">Statsmodels</span></div>
+            <button class="btn btn-outline-light btn-sm" data-bs-toggle="modal" data-bs-target="#proj3">Details</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4 project-item" data-category="sql python" data-aos="fade-up" data-aos-delay="300">
+        <div class="card h-100 card-tilt">
+          <img class="card-img-top" src="assets/img/project4.svg" alt="Churn" />
+          <div class="card-body">
+            <h5 class="card-title">Churn Risk Scoring (Analyst)</h5>
+            <p class="card-text text-secondary">Feature ideation, SQL marts, and a simple logistic model.</p>
+            <div class="mb-2"><span class="tag">SQL</span><span class="tag">Logistic Regression</span><span class="tag">Segmentation</span></div>
+            <button class="btn btn-outline-light btn-sm" data-bs-toggle="modal" data-bs-target="#proj4">Details</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4 project-item" data-category="bi" data-aos="fade-up" data-aos-delay="400">
+        <div class="card h-100 card-tilt">
+          <img class="card-img-top" src="assets/img/project5.svg" alt="Ops dashboard" />
+          <div class="card-body">
+            <h5 class="card-title">Operations KPI Suite</h5>
+            <p class="card-text text-secondary">SLA monitoring and anomaly alerts.</p>
+            <div class="mb-2"><span class="tag">Looker</span><span class="tag">Power BI</span><span class="tag">SQL</span></div>
+            <button class="btn btn-outline-light btn-sm" data-bs-toggle="modal" data-bs-target="#proj5">Details</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4 project-item" data-category="python" data-aos="fade-up" data-aos-delay="500">
+        <div class="card h-100 card-tilt">
+          <img class="card-img-top" src="assets/img/project6.svg" alt="Automation" />
+          <div class="card-body">
+            <h5 class="card-title">Reporting Automation</h5>
+            <p class="card-text text-secondary">Automated ingestion, data quality checks, and email digests.</p>
+            <div class="mb-2"><span class="tag">Python</span><span class="tag">Airflow</span><span class="tag">Great Expectations</span></div>
+            <button class="btn btn-outline-light btn-sm" data-bs-toggle="modal" data-bs-target="#proj6">Details</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="dashboards">
+  <div class="container">
+    <div class="row g-4 align-items-center">
+      <div class="col-lg-5" data-aos="fade-right">
+        <h2 class="section-title mb-2">Dashboard Previews</h2>
+        <p class="section-subtitle">A taste of my KPI storytelling. Data shown is mock data.</p>
+        <ul class="text-secondary">
+          <li>Executive KPIs with trends and targets</li>
+          <li>Category breakdowns and seasonal patterns</li>
+          <li>Conversion funnel tracking</li>
+        </ul>
+      </div>
+      <div class="col-lg-7" data-aos="fade-left">
+        <div class="card p-4"><canvas id="lineChart" height="160"></canvas></div>
+        <div class="card p-4 mt-3"><canvas id="barChart" height="160"></canvas></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <footer class="py-5">
+    <div class="container">
+      <div class="d-flex flex-column flex-md-row justify-content-between align-items-center gap-3">
+        <div>
+          <div class="fw-semibold">© <span id="year">2025</span> Your Name</div>
+          <div class="small text-secondary">Built with Bootstrap 5, AOS, Typed.js and Chart.js.</div>
+        </div>
+        <div class="d-flex gap-3">
+          <a class="btn btn-outline-light btn-sm" href="#top"><i class="fa-solid fa-arrow-up"></i> Top</a>
+          <a class="btn btn-outline-light btn-sm" href="https://github.com/" target="_blank" rel="noreferrer"><i class="fa-brands fa-github"></i></a>
+          <a class="btn btn-outline-light btn-sm" href="https://www.linkedin.com/" target="_blank" rel="noreferrer"><i class="fa-brands fa-linkedin"></i></a>
+          <a class="btn btn-outline-light btn-sm" href="mailto:hello@example.com"><i class="fa-regular fa-envelope"></i></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+<!-- Modals (project details) -->
+<div class="modal fade" id="proj1" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered"><div class="modal-content">
+    <div class="modal-header"><h5 class="modal-title">Cohort Retention Analysis</h5><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button></div>
+    <div class="modal-body">
+      <p>Modeled cohorts by signup month, built retention matrices, and identified high‑value channels. Improved M3 retention by 6% after spend reallocation.</p>
+      <pre class="p-3 rounded bg-dark text-light"><code>-- Example: new vs returning revenue by month
+WITH rev AS (
+  SELECT DATE_TRUNC(order_date, MONTH) AS m,
+         user_id,
+         SUM(amount) AS revenue,
+         MIN(order_date) OVER (PARTITION BY user_id) AS first_order
+  FROM analytics.orders
+  GROUP BY 1,2
+)
+SELECT m,
+  SUM(CASE WHEN DATE_TRUNC(first_order, MONTH)=m THEN revenue ELSE 0 END) AS new_rev,
+  SUM(CASE WHEN DATE_TRUNC(first_order, MONTH)<>m THEN revenue ELSE 0 END) AS returning_rev
+FROM rev
+GROUP BY 1
+ORDER BY 1;</code></pre>
+    </div>
+  </div></div>
+</div>
+<div class="modal fade" id="proj2" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered"><div class="modal-content">
+    <div class="modal-header"><h5 class="modal-title">Executive Sales Dashboard</h5><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button></div>
+    <div class="modal-body"><p>KPI tree (Revenue → Orders × AOV), drilldowns, and alerting. Single source of truth across teams.</p></div>
+  </div></div>
+</div>
+<div class="modal fade" id="proj3" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered"><div class="modal-content">
+    <div class="modal-header"><h5 class="modal-title">Experimentation & A/B Testing</h5><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button></div>
+    <div class="modal-body"><p>t‑tests, non‑parametric tests, and power analysis. Lightweight CUPED brought ~20% variance reduction.</p></div>
+  </div></div>
+</div>
+<div class="modal fade" id="proj4" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered"><div class="modal-content">
+    <div class="modal-header"><h5 class="modal-title">Churn Risk Scoring (Analyst)</h5><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button></div>
+    <div class="modal-body"><p>Collaborated with DS to ship an interpretable model. Delivered actionable segments to lifecycle marketing.</p></div>
+  </div></div>
+</div>
+<div class="modal fade" id="proj5" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered"><div class="modal-content">
+    <div class="modal-header"><h5 class="modal-title">Operations KPI Suite</h5><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button></div>
+    <div class="modal-body"><p>SLA monitoring with anomaly detection and daily email digests for leadership.</p></div>
+  </div></div>
+</div>
+<div class="modal fade" id="proj6" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered"><div class="modal-content">
+    <div class="modal-header"><h5 class="modal-title">Reporting Automation</h5><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button></div>
+    <div class="modal-body"><p>Automated weekly reporting with checks; reduced manual effort by 6 hours/week.</p></div>
+  </div></div>
+</div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/charts.js"></script>
+
+</body>
+</html>
